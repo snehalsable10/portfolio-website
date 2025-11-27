@@ -77,7 +77,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/snehal-sable"
+              href="https://linkedin.com/in/snehal-sable-bb215b268"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
@@ -86,7 +86,7 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://leetcode.com/snehalsable10"
+              href="https://leetcode.com/u/snehalsable"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
