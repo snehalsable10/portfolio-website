@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCalendar, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBriefcase, FaCalendar, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 
 const Experience = () => {
   return (
@@ -33,6 +33,14 @@ const Experience = () => {
             <div className="relative bg-darker p-8 rounded-xl border border-primary/30 hover:border-primary transition-all duration-300 md:ml-20">
               {/* Timeline Dot */}
               <div className="absolute -left-12 top-8 w-6 h-6 bg-primary rounded-full border-4 border-dark hidden md:block"></div>
+
+              {/* Completed Badge */}
+              <div className="absolute top-4 right-4">
+                <div className="flex items-center gap-2 bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm border border-green-500/30">
+                  <FaCheckCircle />
+                  <span>Completed</span>
+                </div>
+              </div>
 
               <div className="flex items-start gap-4 mb-4">
                 <div className="bg-primary/20 p-4 rounded-lg">
