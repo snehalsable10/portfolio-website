@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -95,12 +96,13 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap">
               <a
                 href="https://github.com/snehalsable10"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
+                title="GitHub"
               >
                 <FaGithub />
               </a>
@@ -109,8 +111,27 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
+                title="LinkedIn"
               >
                 <FaLinkedin />
+              </a>
+              <a
+                href="https://leetcode.com/snehalsable10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
+                title="LeetCode"
+              >
+                <SiLeetcode />
+              </a>
+              <a
+                href="https://auth.geeksforgeeks.org/user/snehalsable10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
+                title="GeeksforGeeks"
+              >
+                <SiGeeksforgeeks />
               </a>
             </div>
           </motion.div>
