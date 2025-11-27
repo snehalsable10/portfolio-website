@@ -9,6 +9,8 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
@@ -17,11 +19,36 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your form submission logic here (EmailJS, etc.)
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      const mailtoLink = `mailto:snehalsable105@gmail.com?subject=${subject}&body=${body}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+      
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+    } catch (error) {
+      setSubmitStatus('error');
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -107,7 +134,7 @@ const Contact = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/snehal-sable"
+                href="https://linkedin.com/in/snehal-sable-bb215b268"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
@@ -116,7 +143,7 @@ const Contact = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://leetcode.com/snehalsable10"
+                href="https://leetcode.com/u/snehalsable"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
@@ -192,11 +219,24 @@ const Contact = () => {
                 ></textarea>
               </div>
 
+              {submitStatus === 'success' && (
+                <div className="bg-green-500/20 border border-green-500/30 text-green-400 px-4 py-3 rounded-lg">
+                  Your email client will open. Please send the message from there!
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="bg-red-500/20 border border-red-500/30 text-red-400 px-4 py-3 rounded-lg">
+                  Something went wrong. Please try emailing directly at snehalsable105@gmail.com
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-primary hover:bg-secondary text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                disabled={isSubmitting}
+                className="w-full bg-primary hover:bg-secondary text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isSubmitting ? 'Opening Email Client...' : 'Send Message'}
               </button>
             </form>
           </motion.div>
