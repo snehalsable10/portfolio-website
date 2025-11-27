@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -16,12 +17,13 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex gap-6 text-2xl">
+          <div className="flex gap-6 text-2xl flex-wrap justify-center">
             <a
               href="https://github.com/snehalsable10"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300"
+              title="GitHub"
             >
               <FaGithub />
             </a>
@@ -30,12 +32,32 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300"
+              title="LinkedIn"
             >
               <FaLinkedin />
             </a>
             <a
+              href="https://leetcode.com/snehalsable10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light hover:text-primary transition-colors duration-300"
+              title="LeetCode"
+            >
+              <SiLeetcode />
+            </a>
+            <a
+              href="https://auth.geeksforgeeks.org/user/snehalsable10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light hover:text-primary transition-colors duration-300"
+              title="GeeksforGeeks"
+            >
+              <SiGeeksforgeeks />
+            </a>
+            <a
               href="mailto:snehalsable105@gmail.com"
               className="text-light hover:text-primary transition-colors duration-300"
+              title="Email"
             >
               <FaEnvelope />
             </a>
