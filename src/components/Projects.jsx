@@ -9,8 +9,8 @@ const Projects = () => {
       subtitle: 'Food Order Platform',
       description: 'Developed a food delivery web application using MongoDB, Express.js, React.js, and Node.js, featuring real-time order management and user authentication. Designed reusable UI components with React.js and implemented RESTful APIs for seamless data communication.',
       tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'REST API', 'JWT'],
-      demo: '#',
-      github: '#',
+      demo: 'https://github.com/snehalsable10/feastify',
+      github: 'https://github.com/snehalsable10/feastify',
       gradient: 'from-blue-500/20 to-cyan-500/20'
     },
     {
@@ -18,8 +18,8 @@ const Projects = () => {
       subtitle: 'ML-Based Recommendation Engine',
       description: 'Developed a recommender system using Bag of Words & cosine similarity on a dataset of 5K+ movies. Achieved 85%+ accuracy and integrated Flask API with React for real-time recommendations.',
       tech: ['Python', 'Flask', 'React.js', 'Machine Learning', 'Cosine Similarity', 'Pandas'],
-      demo: '#',
-      github: '#',
+      demo: 'https://github.com/snehalsable10/movie-recommender',
+      github: 'https://github.com/snehalsable10/movie-recommender',
       gradient: 'from-purple-500/20 to-pink-500/20'
     },
     {
@@ -27,8 +27,8 @@ const Projects = () => {
       subtitle: 'Property Rental Website',
       description: 'Developed a responsive real estate platform with MERN stack, supporting 50+ dynamic property listings. Optimized browsing & search functionality, reducing property discovery time significantly.',
       tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS', 'REST API'],
-      demo: '#',
-      github: '#',
+      demo: 'https://github.com/snehalsable10/breezyhomes',
+      github: 'https://github.com/snehalsable10/breezyhomes',
       gradient: 'from-green-500/20 to-emerald-500/20'
     }
   ];
@@ -92,7 +92,7 @@ const Projects = () => {
                     className="flex-1 bg-primary hover:bg-secondary text-white py-2 px-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <FaExternalLinkAlt />
-                    <span>Live Demo</span>
+                    <span>View Demo</span>
                   </a>
                   <a
                     href={project.github}
