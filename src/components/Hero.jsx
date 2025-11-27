@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si';
 
 const Hero = () => {
   return (
@@ -34,7 +35,7 @@ const Hero = () => {
           >
             <p className="text-lg md:text-xl text-light mb-8 max-w-3xl mx-auto leading-relaxed">
               MERN Stack Developer passionate about building scalable web applications.
-              Currently interning at ScaleFull Technologies, specializing in React.js, Node.js, and MongoDB.
+              Specializing in React.js, Node.js, and MongoDB with hands-on experience in full-stack development.
             </p>
           </motion.div>
 
@@ -64,13 +65,14 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="flex gap-6 justify-center text-3xl"
+            className="flex gap-6 justify-center text-3xl flex-wrap"
           >
             <a
               href="https://github.com/snehalsable10"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
+              title="GitHub"
             >
               <FaGithub />
             </a>
@@ -79,18 +81,39 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
+              title="LinkedIn"
             >
               <FaLinkedin />
             </a>
             <a
+              href="https://leetcode.com/snehalsable10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
+              title="LeetCode"
+            >
+              <SiLeetcode />
+            </a>
+            <a
+              href="https://auth.geeksforgeeks.org/user/snehalsable10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
+              title="GeeksforGeeks"
+            >
+              <SiGeeksforgeeks />
+            </a>
+            <a
               href="mailto:snehalsable105@gmail.com"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
+              title="Email"
             >
               <FaEnvelope />
             </a>
             <a
               href="tel:+917448126315"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
+              title="Phone"
             >
               <FaPhone />
             </a>
