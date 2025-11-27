@@ -32,8 +32,8 @@ const About = () => {
                 at Sinhgad Institute of Technology and Science, Pune with a CGPA of 8.89/10.0.
               </p>
               <p className="text-light leading-relaxed mb-4">
-                Currently working as a Full Stack Developer Intern at ScaleFull Technologies, where I'm 
-                gaining hands-on experience in building MERN-based applications, integrating APIs, and 
+                I recently completed my Full Stack Developer Internship at ScaleFull Technologies, where I 
+                gained hands-on experience in building MERN-based applications, integrating APIs, and 
                 designing responsive user interfaces.
               </p>
               <p className="text-light leading-relaxed">
@@ -79,16 +79,16 @@ const About = () => {
                   <FaBriefcase className="text-3xl text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-2">Current Role</h4>
+                  <h4 className="text-xl font-bold mb-2">Recent Experience</h4>
                   <p className="text-light mb-1">
                     <strong>Full Stack Developer Intern</strong>
                   </p>
                   <p className="text-sm text-light/70">ScaleFull Technologies Pvt. Ltd., Pune</p>
-                  <p className="text-sm text-primary mb-2">Jan 2025 - Feb 2025</p>
+                  <p className="text-sm text-primary mb-2">Jan 2025 - Feb 2025 (Completed)</p>
                   <ul className="text-sm text-light/80 space-y-1 list-disc list-inside">
-                    <li>Working on MERN-based Food Order Platform</li>
-                    <li>Integrating APIs using Axios</li>
-                    <li>Designing reusable React components</li>
+                    <li>Worked on MERN-based Food Order Platform</li>
+                    <li>Integrated APIs using Axios</li>
+                    <li>Designed reusable React components</li>
                   </ul>
                 </div>
               </div>
