@@ -152,7 +152,7 @@ const Contact = () => {
                 <SiLeetcode />
               </a>
               <a
-                href="https://www.geeksforgeeks.org/user/snehalsamzs8/"
+                href="https://www.geeksforgeeks.org/profile/snehalsamzs8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
