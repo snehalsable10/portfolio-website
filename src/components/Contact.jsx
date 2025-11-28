@@ -134,7 +134,7 @@ const Contact = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/snehal-sable-bb215b268"
+                href="https://www.linkedin.com/in/snehal-sable-bb215b268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/20 hover:bg-primary text-primary hover:text-white p-4 rounded-lg transition-all duration-300 text-2xl"
