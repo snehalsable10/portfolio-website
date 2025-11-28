@@ -77,7 +77,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/snehal-sable-bb215b268"
+              href="https://www.linkedin.com/in/snehal-sable-bb215b268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
