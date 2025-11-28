@@ -95,7 +95,7 @@ const Hero = () => {
               <SiLeetcode />
             </a>
             <a
-              href="https://auth.geeksforgeeks.org/user/snehalsable10"
+              href="https://www.geeksforgeeks.org/profile/snehalsamzs8"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-primary transition-colors duration-300 transform hover:scale-110"
